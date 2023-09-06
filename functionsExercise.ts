@@ -37,3 +37,5 @@ const isLeapyear = (year: number): boolean => {
 
 isLeapyear(2012);
 isLeapyear(2013);
+
+export {};
