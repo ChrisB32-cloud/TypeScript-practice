@@ -42,11 +42,24 @@ const getProfit = (movie: Movie): string => {
   return `${movie.title} world wide gross is ${worldGross - movieBudget}`;
 };
 
+const getProfit_2 = ({
+  title,
+  boxOffice: { grossWorldwide, budget },
+}: Movie): string => {
+  return `${title} world wide gross is ${grossWorldwide - budget}`;
+};
+
 const callGetProfitWithDune = getProfit(dune);
 const callGetProfitWithCats = getProfit(cats);
 
+const callGetProfitWithDune_2 = getProfit_2(dune);
+const callGetProfitWithCats_2 = getProfit_2(cats);
+
 console.log(callGetProfitWithDune);
 console.log(callGetProfitWithCats);
+
+console.log(callGetProfitWithDune_2);
+console.log(callGetProfitWithCats_2);
 
 // Write a function called getProfit that accepts a single Movie object
 // It should return the movie's worldwide gross minus its budget

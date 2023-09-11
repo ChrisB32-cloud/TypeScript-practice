@@ -26,10 +26,18 @@ var getProfit = function (movie) {
     var movieBudget = movie.boxOffice.budget;
     return "".concat(movie.title, " world wide gross is ").concat(worldGross - movieBudget);
 };
+var getProfit_2 = function (_a) {
+    var title = _a.title, _b = _a.boxOffice, grossWorldwide = _b.grossWorldwide, budget = _b.budget;
+    return "".concat(title, " world wide gross is ").concat(grossWorldwide - budget);
+};
 var callGetProfitWithDune = getProfit(dune);
 var callGetProfitWithCats = getProfit(cats);
+var callGetProfitWithDune_2 = getProfit_2(dune);
+var callGetProfitWithCats_2 = getProfit_2(cats);
 console.log(callGetProfitWithDune);
 console.log(callGetProfitWithCats);
+console.log(callGetProfitWithDune_2);
+console.log(callGetProfitWithCats_2);
 // Write a function called getProfit that accepts a single Movie object
 // It should return the movie's worldwide gross minus its budget
 // For example...
