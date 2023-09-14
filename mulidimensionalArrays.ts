@@ -1,7 +1,5 @@
 // -- MULTIDIMENTIONAL ARRAYS --
 
-//
-
 // ex of a array with nested a nested array of strings
 const ticTakTow: string[][] = [
   ["X", "O", "X"],
