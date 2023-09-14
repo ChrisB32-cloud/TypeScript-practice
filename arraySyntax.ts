@@ -3,7 +3,7 @@
 // Alternate array syntax
 
 // Alt syntax
-const ages: Array<number> = [34, 32, 45, 43];
+const ages_2: Array<number> = [34, 32, 45, 43];
 
 const names_4: Array<string> = ["Clark", "Taylor"];
 
