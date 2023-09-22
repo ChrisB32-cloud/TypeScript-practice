@@ -13,7 +13,8 @@ highScore = true;
 // it can be an array of numbers OR an array of strings
 // it cannot be an array of numbers and strings (mixed together)
 
-const AlotOfStuff: (number | string)[] = [1, 2, 3, "4", 5, 6, 7, "8"];
+let AlotOfStuff: number[] | string[] = [1, 2, 3, 5, 6, 7];
+AlotOfStuff = ["1", "2", "3", "5", "6", "7"];
 
 // **********************************************
 // ******************* PART 3 *******************
