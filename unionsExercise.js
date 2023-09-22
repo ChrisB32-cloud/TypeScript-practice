@@ -10,7 +10,8 @@ highScore = true;
 // create an array called stuff
 // it can be an array of numbers OR an array of strings
 // it cannot be an array of numbers and strings (mixed together)
-var AlotOfStuff = [1, 2, 3, "4", 5, 6, 7, "8"];
+var AlotOfStuff = [1, 2, 3, 5, 6, 7];
+AlotOfStuff = ["1", "2", "3", "5", "6", "7"];
 // Create an array called colors that can hold a mixture of RGB and HSL color types
 var myColors = [
     { r: 234, g: 543, b: 432 },
@@ -26,10 +27,10 @@ function greet(name) {
         return "Hello ".concat(name);
     }
     else {
-        return "Hello ".concat(name[0]);
+        return name.map(function (n) { return "Hello ".concat(n); });
     }
 }
 var checkFunc = greet("Clark");
-var checkFunc_2 = greet(["Lex"]);
+var checkFunc_2 = greet(["Lex", "clark", "Marc"]);
 console.log(checkFunc);
 console.log(checkFunc_2);

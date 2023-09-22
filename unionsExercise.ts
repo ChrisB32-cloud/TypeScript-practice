@@ -37,7 +37,7 @@ type SkiSchoolStudent = {
   name: string;
   age: number;
   sport: "ski" | "snowboard";
-  level: "Intermediate";
+  level: SkillLevel;
 };
 
 // **********************************************
@@ -81,12 +81,12 @@ function greet(name: string | string[]) {
   if (typeof name === "string") {
     return `Hello ${name}`;
   } else {
-    return `Hello ${name[0]}`;
+    return name.map((n) => `Hello ${n}`);
   }
 }
 
 const checkFunc = greet("Clark");
-const checkFunc_2 = greet(["Lex"]);
+const checkFunc_2 = greet(["Lex", "clark", "Marc"]);
 
 console.log(checkFunc);
 console.log(checkFunc_2);
