@@ -9,3 +9,21 @@ const norman: Duck = {
   eggsPerWeek: 1,
   name: "Dalphny",
 };
+
+// We can run tsc -w "file name" to have a file
+// automatically compilied each time we save
+
+interface Guitar {
+  brand: string;
+  numberOfString: number;
+  pickups: string;
+}
+
+const newGuitar: Guitar = {
+  brand: "Ibanez",
+  numberOfString: 7,
+  pickups: "Fishman Fluance",
+  //   newVar: "error",
+};
+
+// The extra var is now showing an error in console on save
