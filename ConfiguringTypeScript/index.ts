@@ -26,4 +26,10 @@ const newGuitar: Guitar = {
   //   newVar: "error",
 };
 
+const anotherGuitar: Guitar = {
+  brand: "ESP",
+  numberOfString: 7,
+  pickups: "Fishman Fluance",
+};
+
 // The extra var is now showing an error in console on save
