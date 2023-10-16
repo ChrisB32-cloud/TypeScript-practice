@@ -60,3 +60,11 @@ const anotherGuitar: Guitar = {
 // the complied javascript files
 // Right now if we don't specify they are present along side our typescript files
 // in the same directory
+
+// Target option
+
+// target option governs the version of javascript that typescript is spit out to
+// ex would be es3, es5 etc......
+
+// ex "target": "es5" default is es3 according to docs
+// however when we run ts init we get es2016 by default
