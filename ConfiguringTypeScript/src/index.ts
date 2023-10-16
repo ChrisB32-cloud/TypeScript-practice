@@ -53,3 +53,10 @@ const anotherGuitar: Guitar = {
 // or have a excludes present in tsconfig.json
 // However if we do specifiy files we want to exclude we have to add node.modules
 // to the array of file we want to exclude as well
+
+// outdir
+
+// outdir is basically specifing where we want typescript to spit out
+// the complied javascript files
+// Right now if we don't specify they are present along side our typescript files
+// in the same directory
