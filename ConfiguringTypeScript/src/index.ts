@@ -68,3 +68,21 @@ const anotherGuitar: Guitar = {
 
 // ex "target": "es5" default is es3 according to docs
 // however when we run ts init we get es2016 by default
+
+// Strict option
+
+// strict option enables all stric type-checking options
+// What this does is enable a bunch of conditions and restrantes from typescript
+// By default it is set to true
+
+// If we set strict to false it won't show the errors we'd
+// otherwise need to see
+
+// ex with strict set to false
+
+function doThisThing(thing) {
+  console.log(thing);
+}
+
+// we get three dot under the parameter that hints a implicitly impling
+// it's use but it doesn't show an error
