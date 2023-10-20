@@ -6,6 +6,7 @@ inputEl.value = "Hacked!";
 const btn = document.querySelector<HTMLButtonElement>(".btn")!;
 
 // Without Generics...Lots of Repetition!
+
 function numberIdentity(item: number): number {
   return item;
 }
@@ -20,10 +21,27 @@ function booleanIdentity(item: boolean): boolean {
 //   return item;
 // }
 
+interface Avenger {
+  alias: string;
+  name: string;
+}
+
+// This one function can replace all of the non generic functions
+// Basically it says the type you pass in will be the type it passes back
+// Returns what we provide to it
 // With A Generic...Super Reusable!
 function identity<T>(item: T): T {
   return item;
 }
+
+// My functions Genrics
+function aPerson<T>(person: T): T {
+  return person;
+}
+
+aPerson<Avenger>({ alias: "Iron Man", name: "Tony Stark" });
+
+aPerson<string>("Clark");
 
 identity<number>(7);
 identity<string>("hello");
