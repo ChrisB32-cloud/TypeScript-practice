@@ -58,9 +58,13 @@ function getRandomItem<T>(list: T[]): T {
 console.log(getRandomElement<string>(["a", "b", "c"]));
 getRandomElement<number>([5, 6, 21, 354, 567, 234, 654]);
 getRandomElement([1, 2, 3, 4]);
+
 console.log(
   getRandomItem<string>(["Iron Man", "Hulk", "Thor", "Captain America"])
 );
+
+// TypeScript can inferre the type parameter
+console.log(getRandomItem(["Iron Man", "Hulk", "Thor", "Captain America"]));
 
 // Generics With Constraints:
 function merge<T extends object, U extends object>(object1: T, object2: U) {
