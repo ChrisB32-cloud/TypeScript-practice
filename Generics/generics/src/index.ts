@@ -50,10 +50,17 @@ function getRandomElement<T>(list: T[]): T {
   const randIdx = Math.floor(Math.random() * list.length);
   return list[randIdx];
 }
+function getRandomItem<T>(list: T[]): T {
+  const randIdx = Math.floor(Math.random() * list.length);
+  return list[randIdx];
+}
 
 console.log(getRandomElement<string>(["a", "b", "c"]));
 getRandomElement<number>([5, 6, 21, 354, 567, 234, 654]);
 getRandomElement([1, 2, 3, 4]);
+console.log(
+  getRandomItem<string>(["Iron Man", "Hulk", "Thor", "Captain America"])
+);
 
 // Generics With Constraints:
 function merge<T extends object, U extends object>(object1: T, object2: U) {
